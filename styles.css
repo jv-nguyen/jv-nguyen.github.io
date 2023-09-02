@@ -154,6 +154,7 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
         font-size: 30px;
+        text-align: center;
     }
     .research-two-column {
         display: grid;
@@ -729,7 +730,7 @@ div.scroll-container hp {
 /*media queries - home*/ 
 @media only screen and (max-width:500px) {
     body {
-        overflow: hidden;
+        overflow: scroll;
         height:100vh;
     }
     .container {
