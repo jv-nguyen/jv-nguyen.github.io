@@ -1,0 +1,191 @@
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+           portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/12c29c871e.js" crossorigin="anonymous"></script>   
+     <div class="wrapper">
+        <div class="media">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/johnv_nguyen" class="fab fa-twitter"></a>                
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/john-nguyen-a294291a7/" style="text-decoration:none" class="fab fa-linkedin-in"></a>
+                </li>
+                <li>
+                    <a href="mailto:john.nguyen@columbia.edu" style="text-decoration:none" style="color:black" class="far fa-envelope"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</head>
+
+
+.center:hover {
+    color:hsl(152, 56%, 53%);
+    transition: .5s;
+}
+
+
+
+
+<div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/frog.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            
+                        </div>
+
+                        <div class="subtitle">
+                            2021 REU-NSF intern. Prospective member of Bell Lab studying hybridization in reed frog species from Bioko Island 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/salamander.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Sampling cutaneous bacteria from endangered green salamanders (Aneides aeneus) in Dupont State Forest to find a solution for species recovery
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/carex.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Carex plantaginea, a spray cliff plant hosting antimicrobial endophytic fungi, from Lower Bearwallow Falls
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/leaf.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            
+                        </div>
+
+                        <div class="subtitle">
+                            2020 REU-NSF intern. Currently a member of the Batterman Lab studying nutrient effects on leaf herbivory across succession and species 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+ background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678)), url(Images/mountain4.JPG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+
+
+
+.media-img {
+    size: 4256px 2832px;
+    height: 291px;
+    animation: Slide_up 1.4s ease;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.media-img:hover {
+    height: 291px;
+    transition: 1s;
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+
+
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 390px;
+    width: 96%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    margin-top: 15px;
+    animation: Slide_up 1.4s ease;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+    text-align: center;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+
+.logo-wrapper img{
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: hsl(152, 56%, 53%);
+
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}

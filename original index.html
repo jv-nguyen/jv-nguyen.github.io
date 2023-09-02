@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>John Nguyen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="page-home">
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="research.html">Research</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="media.html">Media</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="art.html">Art</a>
+                </div>
+            </div> 
+
+            <div class="brand-logo center">
+                <div class="brand">
+                    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@550&family=Open+Sans&display=swap" rel="stylesheet">
+                    <div>JOHN NGUYEN</div>
+                </div>
+            </div>
+
+            <ul id="cssnav" class="navright">
+                <link rel="stylesheet" href="styles.css">
+                <script src="https://kit.fontawesome.com/12c29c871e.js" crossorigin="anonymous"></script>
+                <li>
+                    <a href="https://twitter.com/johnv_nguyen" class="fab fa-twitter"></a>                
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/john-nguyen-a294291a7/" style="text-decoration:none" class="fab fa-linkedin-in"></a>
+                </li>
+                <li>
+                    <a href="mailto:john.nguyen@columbia.edu" style="text-decoration:none" style="color:black" class="far fa-envelope"></a>
+                </li>
+            </ul>
+        </div>
+
+    
+
+    </div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+           portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
